@@ -1,0 +1,14 @@
+{
+    "tabs": [
+        {
+            "title": "Sub Tab 1",
+            "templateUrl": "/Angular/Templates/SiteManagement/Tabs/SubTab1.html",
+            "childData": "Flag"
+        },
+        {
+            "title": "Sub Tab 2",
+            "templateUrl": "/Angular/Templates/SiteManagement/Tabs/SubTab1.html",
+            "childData": null
+        }
+    ]
+}

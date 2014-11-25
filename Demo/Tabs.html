@@ -1,0 +1,8 @@
+<dropdowntabs default-tab="Tab1" tabs-name="CustomName">
+    <dropdowntab title="General">
+        <sub title="Tab1" template-url="/Angular/Templates/Tab1.html"></sub>
+        <sub title="Tab2" template-url="/Angular/Templates/Tab3.html" child-data='{"tabFlag": "{{tabFlagData}}"}' dynamic-tabs="/URL/To/JSON/Object" load-dynamic-tabs="true"></sub>
+        <sub title="Tab3" template-url="/Angular/Templates/SiteManagement/Tab4.html" data-is-show-tab="{{ SomeBooleanValue }}"></sub>
+    </dropdowntab>
+    <singletab data-ng-show="AnotherBooleanValue" title="Property" template-url="/Angular/Templates/SiteManagement/SingleTab.html" />
+</dropdowntabs>
