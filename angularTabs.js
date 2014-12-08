@@ -325,7 +325,7 @@ angular.module('AngularTabs', [])
             if (attrs.dynamicTabs && attrs.loadDynamicTabs == "true") {
                 element.html(dynamicTabsTemplate);
                 $http.post(attrs.dynamicTabs, scope.childData).success(function (data) {
-                    if (data.tabs.length == 0) {
+                    if (data.tabs && data.tabs.length == 0) {
                         scope.isDynamicTabs = false;
                     } else {
                         scope.isDynamicTabs = true;
